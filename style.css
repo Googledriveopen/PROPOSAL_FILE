@@ -1,0 +1,131 @@
+:root {
+    --g-blue: #1a73e8;
+    --g-bg: #f8f9fa;
+    --text-main: #3c4043;
+    --text-sub: #70757a;
+    --border: #dadce0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: white; /* Clean white background */
+    color: var(--text-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main-container {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.view-card {
+    width: 100%;
+    max-width: 440px;
+    padding: 48px 40px;
+    text-align: center;
+    /* Subtle border instead of heavy shadows for a "calm" look */
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+/* Responsive adjustment for Mobile */
+@media (max-width: 480px) {
+    .view-card {
+        border: none;
+        padding: 20px 10px;
+    }
+}
+
+.header h1 {
+    font-size: 22px;
+    font-weight: 400;
+    margin: 20px 0 10px;
+    color: #202124;
+}
+
+.header p {
+    font-size: 15px;
+    color: var(--text-sub);
+    margin-bottom: 30px;
+}
+
+.file-preview-area {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 32px;
+    text-align: left;
+}
+
+.file-item {
+    display: flex;
+    align-items: center;
+}
+
+.file-thumb {
+    font-size: 28px;
+    margin-right: 16px;
+}
+
+.file-title {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #3c4043;
+}
+
+.file-info {
+    font-size: 12px;
+    color: var(--text-sub);
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: var(--g-blue);
+    color: white;
+    padding: 10px 32px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: .25px;
+    transition: background 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #1765cc;
+    box-shadow: 0 1px 2px rgba(60,64,67,0.3);
+}
+
+.security-footer {
+    margin-top: 48px;
+}
+
+.security-footer p {
+    font-size: 12px;
+    color: var(--text-sub);
+}
+
+.divider {
+    height: 1px;
+    background-color: var(--border);
+    width: 40px;
+    margin: 15px auto;
+}
+
+.disclaimer {
+    font-style: italic;
+    opacity: 0.8;
+}
